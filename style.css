@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Colors token */
+:root {
+  --color-primary: #ffcfea;
+  --color-text: black;
+  --bg-color: #f5f2e8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #ffcfea;
+    --color-text: #feffbe;
+    --bg-color: #3e3e42;
+  }
+}
+/* Global style resets */
+body {
+  line-height: 2;
+  font-family: "Courier New", Courier, monospace, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--color-text);
+  text-align: center;
+}
+/*Style head */
+section #head {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+h2,
+.quote {
+  font-style: italic;
+}
+/*Style form */
+hr {
+  color: black;
+}
+form {
+  margin: 1rem;
+}
+input {
+  border: 0.2rem solid black;
+  padding: 0.2rem;
+  height: 2rem;
+}
+#citation {
+  width: 50rem;
+}
+#namemovie {
+  width: 30rem;
+}
+#givequote {
+  border: 0.2rem solid black;
+  border-width: 0.2rem;
+  padding: 0.5rem;
+  color: white;
+  background-color: grey;
+  border-radius: 0.3rem;
+  margin: 1rem;
+}
+#givequote:hover {
+  border: 0.4rem solid red;
+  padding: 0.5rem;
+  background-color: yellow;
+  color: red;
+}
