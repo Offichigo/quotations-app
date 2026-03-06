@@ -1,12 +1,24 @@
 const form = document.getElementById("submit");
-const citation = document.querySelector("#citation");
+const quote = document.querySelector("#citation");
 const namemovie = document.querySelector("#namemovie");
 let count = document.getElementById("count");
 let quoteCount = 0;
+const stored = localStorage.getItem("data");
+let quotesArray = JSON.parse(stored) || [];
+
+// Sans fichier JSON
+
+// On itère sur notre array
+// Pour chaque citation on appelle la fonction addQuote
+
+// POUR : AJOUTER une citation
+// Le code doit être écrit dans la méthode addQuote (on peut le mettre à la fin)
+// Créer un object avec l'auteur et la citation
+// Ajouter cet object dans notre array citations
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  const getCitation = citation.value;
+  const getCitation = quote.value;
   const getName = namemovie.value;
   addQuote(getCitation, getName);
 });
@@ -26,4 +38,9 @@ function addQuote(quote, movie) {
   quoteCount += 1;
   count.innerText = `${quoteCount} citation `;
   console.log(quoteCount);
+  const citation = {
+    movie: "Virgin Suicides",
+    text: "Cecilia: Obviously, Doctor, you've never been a 13-year-old girl.",
+  };
+  quotesArray.push({ text: quote, movie: movie });
 }
