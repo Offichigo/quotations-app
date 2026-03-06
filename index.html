@@ -10,16 +10,19 @@
     <section id="head">
       <h1>Favorite citation in Movie</h1>
       <h2>Online citation manager</h2>
-      <h3>0 punchline</h3>
+      <h3 id="count">0 citation</h3>
       <hr />
     </section>
     <form id="submit" action="" method="">
-      <label for="citation">Type in your favorite movie quote : </label><br />
+      <label for="citation"
+        >Type the character's name, add a colon, and their punchline in
+        quotation marks </label
+      ><br />
       <input
         id="citation"
         type="text"
         name="citation"
-        placeholder="Type in your favorite movie quote here :"
+        placeholder="Type in your favorite movie quote :"
       /><br />
       <label for="nameMovie">Give the name of the film from this quote : </label
       ><br />
@@ -27,7 +30,7 @@
         id="namemovie"
         type="text"
         name="movie"
-        placeholder="Give the name of the film from this quote here :"
+        placeholder="Give the name movie"
       /><br />
       <button type="submit" id="givequote"><b>Submit quotes</b></button>
     </form>
