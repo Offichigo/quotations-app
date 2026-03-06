@@ -13,13 +13,23 @@
       <h3>0 punchline</h3>
       <hr />
     </section>
-    <form id="submit">
+    <form id="submit" action="" method="">
       <label for="citation">Type in your favorite movie quote : </label><br />
-      <input id="citation" type="text" /><br />
+      <input
+        id="citation"
+        type="text"
+        name="citation"
+        placeholder="Type in your favorite movie quote here :"
+      /><br />
       <label for="nameMovie">Give the name of the film from this quote : </label
       ><br />
-      <input id="namemovie" /><br />
-      <button id="givequote"><b>Submit quotes</b></button>
+      <input
+        id="namemovie"
+        type="text"
+        name="movie"
+        placeholder="Give the name of the film from this quote here :"
+      /><br />
+      <button type="submit" id="givequote"><b>Submit quotes</b></button>
     </form>
     <hr />
     <div id="quote-list">
